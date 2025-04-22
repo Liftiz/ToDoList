@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>📝 Ma To-Do List en JavaScript</title>
+  <!-- On relie le fichier CSS pour styliser l'application -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- On relie le fichier JS principal -->
+  <script type="module" src="js/app.js" defer></script>
+</head>
+<body>
+
+  <h1> Ma To-Do List</h1>
+
+  <!-- Champ pour écrire une nouvelle tâche -->
+  <input type="text" id="nouvelleTache" placeholder="Ajouter une tâche">
+  <button id="ajouterBtn">Ajouter</button>
+
+  <!-- Liste où les tâches seront affichées -->
+  <ul id="listeTaches"></ul>
+
+  <!-- Template invisible : modèle de tâche qu'on va cloner en JS -->
+  <template id="template-tache">
+    <li class="tache">
+      <span class="texte"></span>
+      <button class="supprimer">❌</button>
+    </li>
+  </template>
+
+
+</body>
+</html>
